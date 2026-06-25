@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Good Studio Font Tester</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:40px;
+}
+
+h1{
+    font-size:40px;
+}
+
+input{
+    width:90%;
+    max-width:600px;
+    padding:15px;
+    font-size:20px;
+    border-radius:10px;
+    border:none;
+}
+
+.preview{
+    margin-top:30px;
+    font-size:60px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Hello Good Studio Font Tester</h1>
+
+<input
+id="textInput"
+type="text"
+value="Ketik Teks Disini"
+oninput="updateText()">
+
+<div class="preview" id="preview">
+Ketik Teks Disini
+</div>
+
+<script>
+function updateText(){
+    document.getElementById("preview").innerText =
+    document.getElementById("textInput").value;
+}
+</script>
+
+</body>
+</html>
